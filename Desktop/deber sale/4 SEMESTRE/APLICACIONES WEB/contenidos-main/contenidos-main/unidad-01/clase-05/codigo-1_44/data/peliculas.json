@@ -1,26 +1,37 @@
 [
   {
     "id": 1,
-    "titulo": "Dune",
-    "imagen": "dune.jpg",
-    "genero": "Aventura",
-    "sinopsis": "Un joven emprende una misión para salvar su mundo.",
-    "trailer": "https://www.youtube.com/embed/mSY_NbSmaUI"
+    "titulo": "Interstellar",
+    "genero": "Ciencia Ficción",
+    "sinopsis": "En un futuro cercano donde la Tierra se está volviendo inhabitable debido a plagas agrícolas y tormentas de polvo, un grupo de valientes exploradores espaciales liderados por un ex piloto de la NASA debe viajar a través de un agujero de gusano recién descubierto. Su misión es encontrar un nuevo hogar para la humanidad antes de que los recursos se agoten por completo en nuestro planeta natal.",
+    "imagen": "img/interstellar.jpg"
   },
   {
     "id": 2,
-    "titulo": "50 primeras citas",
-    "imagen": "50-primeras-citas.jpg",
-    "genero": "Comedia",
-    "sinopsis": "Henry se enamora de Lucy, una mujer con pérdida de memoria a corto plazo.",
-    "trailer": "https://www.youtube.com/embed/17KJk3ErIx0"
+    "titulo": "El Caballero de la Noche",
+    "genero": "Acción",
+    "sinopsis": "Batman se enfrenta a su desafío más grande cuando un criminal psicópata conocido como el Guasón desata una ola de caos y anarquía sobre Ciudad Gótica. Para detener esta amenaza creciente, el caballero oscuro debe forjar una alianza con el fiscal de distrito Harvey Dent y el comisionado James Gordon, poniendo a prueba sus propios límites morales y físicos en una batalla épica por el alma de la ciudad.",
+    "imagen": "img/batman.jpg"
   },
   {
     "id": 3,
-    "titulo": "Batman Caballero de la Noche",
-    "imagen": "batman-caballero-de-la-noche.webp",
-    "genero": "Acción",
-    "sinopsis": "La película comienza con el violento robo de uno de los bancos de la mafia por una banda de payasos.",
-    "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c"
+    "titulo": "El Padrino",
+    "genero": "Drama",
+    "sinopsis": "Esta obra maestra narra la historia de la poderosa familia criminal de los Corleone en la Nueva York de la posguerra. Cuando el patriarca Don Vito Corleone es víctima de un atentado, su hijo menor Michael, quien inicialmente quería mantenerse alejado de los negocios ilícitos de su padre, se ve obligado a sumergirse en el peligroso mundo de la mafia para proteger a su familia y asegurar su legado.",
+    "imagen": "img/padrino.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Inception",
+    "genero": "Suspenso",
+    "sinopsis": "Dom Cobb es un experto en el arte de la extracción, robando secretos valiosos desde lo profundo del subconsciente durante el estado de sueño. Sin embargo, se le ofrece una oportunidad de redención: en lugar de robar una idea, debe implantar una nueva en la mente de un objetivo. Si logra esta hazaña casi imposible llamada origen, podrá finalmente recuperar su vida anterior y volver con su familia.",
+    "imagen": "img/inception.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Duna",
+    "genero": "Aventura",
+    "sinopsis": "Paul Atreides, un joven brillante y talentoso nacido en un destino más grande que él mismo, debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y su pueblo. Mientras fuerzas malévolas estallan en un conflicto por el suministro exclusivo del recurso más valioso que existe, una especia capaz de desbloquear el mayor potencial de la humanidad, solo aquellos que conquisten su miedo sobrevivirán.",
+    "imagen": "img/duna.jpg"
   }
 ]
