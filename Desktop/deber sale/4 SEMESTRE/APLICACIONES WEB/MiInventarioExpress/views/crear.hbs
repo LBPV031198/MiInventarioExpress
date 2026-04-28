@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Registrar Producto</h4>
+            </div>
+            <div class="card-body">
+                <form action="/productos/guardar" method="POST" enctype="multipart/form-data">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del artículo:</label>
+                        <input type="text" name="nombre" class="form-control" placeholder="Ej: Mouse Gamer" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Precio ($):</label>
+                        <input type="number" name="precio" class="form-control" placeholder="0.00" step="0.01" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Descripción:</label>
+                        <textarea name="descripcion" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subir Imagen (Multer):</label>
+                        <input type="file" name="imagen" class="form-control">
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-success">Guardar en Inventario</button>
+                        <a href="/productos" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
