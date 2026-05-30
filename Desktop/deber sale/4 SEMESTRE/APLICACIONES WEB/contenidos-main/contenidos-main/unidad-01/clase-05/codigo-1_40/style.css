@@ -1,0 +1,14 @@
+/* Estilos adicionales personalizados */
+
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .card-title {
+    color: #0d6efd;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM y Eventos</title>
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="app.js" defer></script>
+    <style>
+        .caja {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+            transition: background-color 0.3s;
+        }
+        .resaltado {
+            border: 3px solid red;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Manipulación del DOM 🎨</h1>
+    
+    <button id="cambiarColor">Cambiar Color</button>
+    <button id="toggleBorde">Alternar Borde</button>
+    <button id="agregarItem">Agregar Ítem</button>
+
+    <div class="caja" id="miCaja"></div>
+    
+    <ul id="lista"></ul>
+</body>
+</html>

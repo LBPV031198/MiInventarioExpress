@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Sintaxis Vue</title>
+  <!-- Cargamos Vue desde un CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- Estilos CSS personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Elemento raíz de la aplicación Vue -->
+  <div id="app">
+    
+    <!-- Interpolación: muestra el nombre ingresado o 'invitado' por defecto -->
+    <h1>Bienvenido, {{ nombre || 'invitado' }}</h1>
+
+    <!-- Campo de entrada con v-model para capturar el nombre -->
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" v-model="nombre" placeholder="Ingresa tu nombre">
+
+    <!-- Condición con v-if y v-else-if para validar longitud del nombre -->
+    <p v-if="nombre.length < 3 && nombre.length > 0" class="error">
+      El nombre es demasiado corto.
+    </p>
+    <p v-else-if="nombre.length >= 3" class="success">
+      Nombre válido.
+    </p>
+
+    <hr>
+
+    <!-- Selector con v-model para elegir un avatar -->
+    <label for="avatar">Elige un avatar:</label>
+    <select id="avatar" v-model="avatarSeleccionado">
+      <!-- Opción por defecto (deshabilitada) -->
+      <option disabled value="">Selecciona una opción</option>
+      <!-- Iteración con v-for sobre un objeto de avatares -->
+      <option v-for="(url, nombre) in avatares" :value="url">
+        {{ nombre }}
+      </option>
+    </select>
+
+    <!-- Mostrar imagen del avatar seleccionado -->
+    <div v-if="avatarSeleccionado">
+      <img :src="avatarSeleccionado" alt="Avatar" class="avatar">
+    </div>
+
+    <hr>
+
+    <!-- Lista de intereses generada dinámicamente -->
+    <h3>Selecciona tus intereses:</h3>
+    <ul>
+      <!-- v-for para iterar sobre el array de intereses -->
+      <!-- @click llama al método seleccionar(interes) -->
+      <!-- :class aplica una clase si el interés está seleccionado -->
+      <li v-for="(interes, index) in intereses" :key="index" 
+          @click="seleccionar(interes)"
+          :class="{ activo: interesSeleccionado === interes }">
+        {{ interes }}
+      </li>
+    </ul>
+
+    <!-- Mostrar el interés actualmente seleccionado -->
+    <p v-if="interesSeleccionado">
+      Interés actual: <strong>{{ interesSeleccionado }}</strong>
+    </p>
+
+  </div>
+
+  <!-- Código de la aplicación Vue -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal de Atención Ciudadana</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Atención Ciudadana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-5">Bienvenido al Portal de Atención Ciudadana</h1>
+      <p class="lead">Consulta información útil, accede a servicios y mantente informado.</p>
+    </div>
+  </header>
+
+  <!-- Sección de servicios -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Nuestros Servicios</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Trámites en Línea</h5>
+            <p class="card-text">Accede a tus gestiones desde cualquier lugar con nuestros servicios digitales.</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Asistencia Presencial</h5>
+            <p class="card-text">Encuentra los centros de atención más cercanos y sus horarios de atención.</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Consultas Frecuentes</h5>
+            <p class="card-text">Resuelve tus dudas rápidamente con nuestra sección de preguntas frecuentes.</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alerta informativa -->
+  <div class="container my-4">
+    <div class="alert alert-info text-center" role="alert" id="alertaImportante">
+      ⚠️ Atención: El servicio de chat ciudadano estará en mantenimiento el próximo sábado.
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2024 Gobierno Local. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS y script personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

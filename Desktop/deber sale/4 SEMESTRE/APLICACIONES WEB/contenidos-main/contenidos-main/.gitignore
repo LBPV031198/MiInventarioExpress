@@ -1,0 +1,44 @@
+# Ignorar todas las carpetas node_modules de los proyectos
+**/node_modules/
+
+# Ignorar logs generales
+**/*.log
+
+# Ignorar lock files si no se desea controlar versiones exactas (opcional)
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# Ignorar archivos de entorno
+**/.env
+**/.env.*
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar editores comunes
+.vscode/
+.idea/
+*.swp
+
+# Ignorar salidas de pruebas y cobertura
+**/coverage/
+**/dist/
+**/build/
+
+# Ignorar backups temporales
+*~
+*.bak
+
+# Ignorar archivos y carpetas específicas de Vue
+**/.output/
+**/.cache/
+**/.vite/
+**/vite.config.js
+**/vite.config.ts
+**/vue.config.js
+**/vue.config.ts
+
+# Proyectos inválidos o no deseados
+**/codigo-3_23

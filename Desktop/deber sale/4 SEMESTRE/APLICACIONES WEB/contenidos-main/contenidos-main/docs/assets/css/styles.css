@@ -1,0 +1,29 @@
+/* Tipografía y espaciado base */
+body {
+  letter-spacing: 0.1px;
+}
+
+/* Efecto “elevación” en hover */
+.card-raise {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.card-raise:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+/* Aparición progresiva (jQuery añadirá la clase .show) */
+.unit-card {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.unit-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero */
+header .lead {
+  max-width: 56ch;
+}

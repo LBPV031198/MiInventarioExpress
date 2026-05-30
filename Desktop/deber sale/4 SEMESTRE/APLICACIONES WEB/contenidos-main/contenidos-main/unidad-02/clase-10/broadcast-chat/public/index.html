@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat con Broadcast</title>
+  </head>
+  <body>
+    <h2>Chat Global</h2>
+    <input id="mensaje" placeholder="Escribe algo" />
+    <button onclick="enviar()">Enviar</button>
+    <div id="chat"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      socket.on("chatMensaje", (msg) => {
+        const div = document.getElementById("chat");
+        div.innerHTML += `<p>${msg}</p>`;
+      });
+
+      function enviar() {
+        const input = document.getElementById("mensaje");
+        const texto = input.value;
+        socket.emit("chatMensaje", texto);
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>

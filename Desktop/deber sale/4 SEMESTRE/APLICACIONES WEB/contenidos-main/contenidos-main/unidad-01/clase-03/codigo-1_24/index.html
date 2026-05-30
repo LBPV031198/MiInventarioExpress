@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo de Caja en CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            width: 300px;
+            height: 150px;
+            padding: 20px;
+            border: 5px solid #4CAF50;
+            margin: 30px auto;
+            background-color: #e0f7fa;
+            box-sizing: border-box;
+        }
+
+        .descripcion {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo del Modelo de Caja</h1>
+    <div class="contenedor">
+        <p class="descripcion">Este div utiliza el modelo de caja con `box-sizing: border-box`. El tamaño total incluye el contenido, el relleno y el borde.</p>
+    </div>
+</body>
+</html>

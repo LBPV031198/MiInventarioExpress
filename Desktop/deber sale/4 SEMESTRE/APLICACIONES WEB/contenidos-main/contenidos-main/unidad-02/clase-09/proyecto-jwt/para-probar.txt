@@ -1,0 +1,10 @@
+1. Autenticación
+
+curl -X POST http://localhost:3000/login \
+  -H "Content-Type: application/json" \
+  -d '{"usuario":"admin", "clave":"1234"}'
+
+2. Acceder al perfil
+
+curl http://localhost:3000/perfil \
+  -H "Authorization: Bearer TU_TOKEN_AQUI"

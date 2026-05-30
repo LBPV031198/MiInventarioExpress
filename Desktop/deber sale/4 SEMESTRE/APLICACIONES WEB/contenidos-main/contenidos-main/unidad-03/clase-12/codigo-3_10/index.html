@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de v-if y v-model</title>
+  </head>
+  <body>
+    <div id="app">
+      <label for="puntaje">Puntaje:</label>
+      <input id="puntaje" type="number" v-model="puntuacion" placeholder="Escribe una nota"/>
+      <p>Tu puntuación es: {{ puntuacion }}</p>
+      <p v-if="puntuacion >= 90">Excelente desempeño</p>
+      <p v-else-if="puntuacion >= 60">Desempeño aceptable</p>
+      <p v-else>Necesita mejorar</p>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
